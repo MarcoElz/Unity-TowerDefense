@@ -19,4 +19,5 @@ namespace XP.Pathfinding
             this.neighbors = neighbors;
         }
     }
+   
 }

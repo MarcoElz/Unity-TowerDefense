@@ -56,7 +56,6 @@ public class GridManager : MonoBehaviour
             grid[x][z] = nodes[i];
         }
 
-
         //3. Por cada nodo de la matriz...
         //buscar sus nodos vecinos
         for(int i = 0; i < grid.Length; i++)

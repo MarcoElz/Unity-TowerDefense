@@ -9,12 +9,11 @@ public class Tower : MonoBehaviour
     [SerializeField] GameObject bulletPrefab = default;
 
     private float timeBetweenAttacks;
-
     private float timeOfLastAttack;
 
-    Enemy currentEnemy;
+    private Enemy currentEnemy;
 
-    bool canAttack;
+    private bool canAttack;
 
     public void StartAttack()
     {

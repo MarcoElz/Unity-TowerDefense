@@ -5,13 +5,16 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
+    [SerializeField] int startGold = 100;
+
     public int CurrentGold { get; private set; }
 
     public event Action<int> onGoldAmountChanged;
 
     private void Start()
     {
-        onGoldAmountChanged?.Invoke(0);
+        CurrentGold = startGold;
+        onGoldAmountChanged?.Invoke(CurrentGold);
     }
 
     public void AddGold(int amount)
