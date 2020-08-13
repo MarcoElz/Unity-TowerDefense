@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff4d4d4b4edfa534799a9a552b9f773d, type: 3}
+  m_Name: AereaBase
+  m_EditorClassIdentifier: 
+  baseStats:
+    damage: 12
+    attackSpeed: 1
+    range: 4
+    types:
+    - {fileID: 11400000, guid: 740bdcd591b34c841a5854e021b52d36, type: 2}
+  towerName: Aerea Base
+  sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  prefab: {fileID: 4451523085984461657, guid: 68cc6cfa80d0ae644bf1893290f1cb62, type: 3}
+  evolutions: []

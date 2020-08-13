@@ -14,8 +14,9 @@ GameObject:
   - component: {fileID: 6890747003570585953}
   - component: {fileID: 4178014113363246922}
   - component: {fileID: -4294961881547436479}
+  - component: {fileID: 4852916936879165554}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: NormalEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108,6 +109,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 950c8201981858942bbf2822114aa8e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: {fileID: 11400000, guid: 9723d97318b71114b8e4adc44a0804a7, type: 2}
+  startHP: 30
+  rewardGold: 10
+  attack: 10
 --- !u!114 &-4294961881547436479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,3 +126,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.5
+--- !u!114 &4852916936879165554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6890747003570585959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b46c109c363461546b708106a72a879c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: f82bc700a58d05c4ab872b10e225fd29, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -4294961881547436479}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
